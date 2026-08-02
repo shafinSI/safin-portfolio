@@ -1,0 +1,25 @@
+# Shafin Imtiaz
+
+> Full Stack Developer, AI/ML enthusiast, and Cybersecurity learner based in
+> Dhaka, Bangladesh. Builds web applications, machine learning models, and
+> IoT-based safety systems.
+
+## About
+Shafin Imtiaz is a Computer Science and Engineering student and full-stack
+developer working primarily with Next.js, React, TypeScript, Node.js,
+Python, and Arduino. Focus areas include full-stack web development,
+applied machine learning, cybersecurity fundamentals, and IoT-based smart
+safety systems.
+
+## Key pages
+- Homepage (About, Skills, Projects, Contact): https://safin-portfolio.vercel.app/
+
+## Notable projects
+- Human Safety App — real-time emergency alert and guardian-mode safety web app (Next.js, TypeScript, Node.js, MongoDB): https://github.com/shafinSI/human-safety
+- Heart Disease Prediction — ML risk-prediction model comparing KNN and Gradient Boosting (Python, Scikit-learn): https://github.com/shafinSI/heart-disease-project
+- AI Fire-Fighting & Human-Detection Rescue Robot — Arduino-based rescue robot with flame/ultrasonic sensors (Arduino, C++): https://github.com/shafinSI/AI-Fire-Fighting-Human-Detection-Rescue-Robot
+
+## Contact
+- Email: shafinimtiaz21@gmail.com
+- GitHub: https://github.com/shafinSI
+- Contact form: https://safin-portfolio.vercel.app/#contact
