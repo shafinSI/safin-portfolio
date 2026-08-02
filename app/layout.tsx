@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     template: `%s | ${NAME}`,
   },
   description:
-    "description:
     "Full Stack Developer & AI/ML enthusiast from Dhaka, Bangladesh. Explore Shafin Imtiaz's projects, skills, and experience in Next.js, React & Python.",
   keywords: [
     "Shafin Imtiaz",
