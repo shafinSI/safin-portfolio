@@ -6,7 +6,7 @@ const SITE_URL = "https://safin-portfolio.vercel.app";
 const NAME = "Shafin Imtiaz";
 const GITHUB_URL = "https://github.com/shafinSI";
 // REPLACE with your real LinkedIn profile URL
-const LINKEDIN_URL = "https://www.linkedin.com/in/REPLACE-WITH-YOUR-USERNAME";
+const LINKEDIN_URL = "https://www.linkedin.com/in/shafin-imtiaz-81a084267/";
 const EMAIL = "shafinimtiaz21@gmail.com";
 
 const poppins = Poppins({
