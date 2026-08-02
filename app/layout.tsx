@@ -28,7 +28,8 @@ export const metadata: Metadata = {
     template: `%s | ${NAME}`,
   },
   description:
-    "Portfolio of Shafin Imtiaz — Full Stack Developer, AI/ML enthusiast, and Cybersecurity learner based in Dhaka, Bangladesh. Explore projects, skills, and experience in Next.js, React, TypeScript, and Python.",
+    "description:
+    "Full Stack Developer & AI/ML enthusiast from Dhaka, Bangladesh. Explore Shafin Imtiaz's projects, skills, and experience in Next.js, React & Python.",
   keywords: [
     "Shafin Imtiaz",
     "Full Stack Developer",
