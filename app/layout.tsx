@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const SITE_URL = "https://safin-portfolio.vercel.app";
 const NAME = "Shafin Imtiaz";
 const GITHUB_URL = "https://github.com/shafinSI";
-// REPLACE with your real LinkedIn profile URL
 const LINKEDIN_URL = "https://www.linkedin.com/in/shafin-imtiaz-81a084267/";
 const EMAIL = "shafinimtiaz21@gmail.com";
 
@@ -52,8 +52,6 @@ export const metadata: Metadata = {
       "Full Stack Developer, AI/ML enthusiast, and Cybersecurity learner. Explore projects, skills, and experience.",
     siteName: `${NAME} | Portfolio`,
     locale: "en_US",
-    // Add an OG image at public/og-image.png (1200x630) for a richer preview
-    // when links to this site are shared on social media / iMessage / Slack.
     images: [
       {
         url: "/og-image.png",
@@ -83,8 +81,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  // Once you set up Google Search Console, put the verification code here:
-  // verification: { google: "REPLACE" },
 };
 
 export default function RootLayout({
@@ -141,7 +137,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
       </head>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
