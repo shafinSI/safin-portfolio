@@ -15,7 +15,7 @@ export default function Contact() {
           <a href="https://github.com/shafinSI" target="_blank" rel="noopener noreferrer" className="block text-cyan-400 hover:underline">
             GitHub Profile
           </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="block text-cyan-400 hover:underline">
+          <a href="https://www.linkedin.com/in/shafin-imtiaz-81a084267/" target="_blank" rel="noopener noreferrer" className="block text-cyan-400 hover:underline">
             LinkedIn Profile
           </a>
         </div>
