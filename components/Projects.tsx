@@ -31,7 +31,7 @@ export default function Projects() {
           Projects
         </h2>
 
-        <p className="text-gray-400 mb-12">
+        <p className="text-gray-300 mb-12">
           Some of my academic, web development, AI, and hardware-based projects.
         </p>
 
@@ -45,7 +45,7 @@ export default function Projects() {
                 {project.title}
               </h3>
 
-              <p className="text-gray-400 mb-5 leading-7">
+              <p className="text-gray-300 mb-5 leading-7">
                 {project.description}
               </p>
 

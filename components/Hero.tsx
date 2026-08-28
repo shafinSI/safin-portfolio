@@ -19,7 +19,7 @@ export default function Hero() {
           />
         </div>
 
-        <p className="text-base md:text-lg text-gray-400 mb-10 leading-relaxed max-w-3xl mx-auto">
+        <p className="text-base md:text-lg text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto">
           I build modern web applications, AI-powered solutions, and
           safety-focused technology projects using Next.js, React, TypeScript,
           Python, and Arduino.
