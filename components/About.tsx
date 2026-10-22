@@ -7,14 +7,42 @@ export default function About() {
           About Me
         </h2>
 
-        <p className="text-lg text-gray-300 leading-8">
-          I am a Computer Science and Engineering student passionate about
-          Full Stack Development, Artificial Intelligence, Cybersecurity,
-          and IoT-based smart safety systems.
-
-          I enjoy building real-world applications using Next.js, React,
-          TypeScript, Python, Machine Learning, and Arduino.
+        <p className="text-lg text-gray-300 leading-8 mb-6">
+          I am a final-year Computer Science and Engineering student at United
+          International University, currently interning as a Machine Learning
+          Engineer at FlyRank AI. I build full-stack apps with Next.js and
+          Node.js, and machine learning models with Python and scikit-learn.
         </p>
+
+        <p className="text-lg text-gray-300 leading-8 mb-10">
+          I also lead the UIU Robotics Club as Volunteer Head. I am looking for
+          opportunities in AI/ML, full-stack development, and tech-driven
+          roles, with a special interest in smart mobility and EV
+          infrastructure.
+        </p>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="rounded-2xl border border-cyan-400/30 p-6">
+            <p className="text-cyan-400 font-semibold mb-2">Education</p>
+            <p className="text-gray-300">
+              Final-year CSE student, United International University
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-cyan-400/30 p-6">
+            <p className="text-cyan-400 font-semibold mb-2">Internship</p>
+            <p className="text-gray-300">
+              Machine Learning Engineering Intern, FlyRank AI
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-cyan-400/30 p-6">
+            <p className="text-cyan-400 font-semibold mb-2">Leadership</p>
+            <p className="text-gray-300">
+              Volunteer Head, UIU Robotics Club
+            </p>
+          </div>
+        </div>
 
       </div>
     </section>
