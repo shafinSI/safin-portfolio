@@ -5,9 +5,14 @@ import "./globals.css";
 
 const SITE_URL = "https://safin-portfolio.vercel.app";
 const NAME = "Shafin Imtiaz";
+const ALT_NAME = "Safin Imtiaz";
 const GITHUB_URL = "https://github.com/shafinSI";
 const LINKEDIN_URL = "https://www.linkedin.com/in/shafin-imtiaz-81a084267/";
 const EMAIL = "shafinimtiaz21@gmail.com";
+
+const TITLE = `${NAME} | ML Engineer & Full-Stack Developer`;
+const DESCRIPTION =
+  "Shafin Imtiaz (Safin Imtiaz) is a final-year CSE student at United International University and Machine Learning Engineering Intern at FlyRank AI, building full-stack web apps and ML projects with Next.js, React and Python. Based in Dhaka, Bangladesh.";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,19 +29,20 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${NAME} | Full Stack Developer & AI Enthusiast`,
+    default: TITLE,
     template: `%s | ${NAME}`,
   },
-  description:
-    "Full Stack Developer & AI/ML enthusiast from Dhaka, Bangladesh. Explore Shafin Imtiaz's projects, skills, and experience in Next.js, React & Python.",
+  description: DESCRIPTION,
   keywords: [
     "Shafin Imtiaz",
+    "Safin Imtiaz",
+    "Shafin Imtiaz portfolio",
+    "Machine Learning Engineer Bangladesh",
     "Full Stack Developer",
     "Next.js Developer Bangladesh",
     "React Developer",
-    "AI Enthusiast",
-    "Machine Learning Portfolio",
-    "Cybersecurity Learner",
+    "FlyRank AI intern",
+    "United International University",
     "Software Engineer Portfolio Dhaka",
   ],
   authors: [{ name: NAME, url: SITE_URL }],
@@ -47,9 +53,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE_URL,
-    title: `${NAME} | Full Stack Developer & AI Enthusiast`,
-    description:
-      "Full Stack Developer, AI/ML enthusiast, and Cybersecurity learner. Explore projects, skills, and experience.",
+    title: TITLE,
+    description: DESCRIPTION,
     siteName: `${NAME} | Portfolio`,
     locale: "en_US",
     images: [
@@ -63,9 +68,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${NAME} | Full Stack Developer & AI Enthusiast`,
-    description:
-      "Full Stack Developer, AI/ML enthusiast, and Cybersecurity learner.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: ["/og-image.png"],
   },
   robots: {
@@ -92,55 +96,13 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: NAME,
+    alternateName: [ALT_NAME],
     url: SITE_URL,
     email: `mailto:${EMAIL}`,
-    jobTitle: "Full Stack Developer",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Dhaka",
-      addressCountry: "BD",
+    jobTitle: "Machine Learning Engineering Intern",
+    worksFor: {
+      "@type": "Organization",
+      name: "FlyRank AI",
     },
-    sameAs: [GITHUB_URL, LINKEDIN_URL].filter((url) => !url.includes("REPLACE")),
-    knowsAbout: [
-      "Full Stack Development",
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Machine Learning",
-      "Cybersecurity",
-      "IoT",
-    ],
-  };
-
-  const websiteJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: `${NAME} | Portfolio`,
-    url: SITE_URL,
-    author: {
-      "@type": "Person",
-      name: NAME,
-    },
-  };
-
-  return (
-    <html lang="en">
-      <head>
-        <script
-          type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
-        />
-      </head>
-      <body className={poppins.className}>
-        {children}
-        <Analytics />
-      </body>
-    </html>
-  );
-}
+    affiliation: {
+      "@type":
